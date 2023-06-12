@@ -1,0 +1,82 @@
+/*estilização universal*/
+
+body {
+    display:flex;
+    padding: 40px;                                                                                                                                                                                                                                   
+}
+* { display: flex;
+    box-sizing: border-box;
+    background-color: #22212C;
+}
+
+div{
+    border: 2px solid aqua;
+}
+
+/*=-=-=-=-=- estilização personalizada - lado esquerdo =-=-=-=--==*/
+
+#left_side { /*border: 1px solid blue;*/
+    flex-direction: column;
+    justify-content: left;
+    margin-top: 40px;
+    margin-left: 40px;
+}
+
+/* =-=-=-=-=-= Estilização - lado direito =-=-=-=-=-=*/
+
+#right_side {
+    flex-direction: column;
+   /* border: 1px solid blue;*/
+    margin-top: 40px;
+    margin-left: 40px;
+
+}
+ 
+#right_side :nth-child(1) {
+    color:aquamarine
+}
+
+/* =-=-=-=-=-= Elementos do lado esquerdo =-=-=-=-=-= */
+ 
+/*=-=-=-=-=-=-= Primeiro bloco - perfil =-=-=-=-=-= */
+.profile {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 348px;
+    height: 348px;
+    border-radius: 10%;
+    
+   
+
+}
+.profile_img {
+    margin-left: 20px;
+    max-width: 100%;
+    max-height: 100%;
+    
+}
+
+.profile_container img {
+    border-radius: 60%;
+    border: 1px solid greenyellow;
+    width: 128px;
+    height: 128px;
+}
+
+/* =-=-=-=-=-=- Segundo bloco - informações =-=-=-=- */
+
+.info_geral {
+    flex-direction: column;
+    justify-content: space-between;
+
+    padding: 30px 40px;
+    flex-basis: 10%;
+    width: 348px;
+    height: 348px;
+
+
+
+    
+}

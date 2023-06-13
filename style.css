@@ -20,6 +20,7 @@ div{
     justify-content: left;
     margin-top: 40px;
     margin-left: 40px;
+    margin-block: 30px;
 }
 
 /* =-=-=-=-=-= Estilização - lado direito =-=-=-=-=-=*/
@@ -31,11 +32,6 @@ div{
     margin-left: 40px;
 
 }
- 
-#right_side :nth-child(1) {
-    color:aquamarine
-}
-
 /* =-=-=-=-=-= Elementos do lado esquerdo =-=-=-=-=-= */
  
 /*=-=-=-=-=-=-= Primeiro bloco - perfil =-=-=-=-=-= */
@@ -47,9 +43,6 @@ div{
     width: 348px;
     height: 348px;
     border-radius: 10%;
-    
-   
-
 }
 .profile_img {
     margin-left: 20px;
@@ -64,19 +57,44 @@ div{
     width: 128px;
     height: 128px;
 }
-
 /* =-=-=-=-=-=- Segundo bloco - informações =-=-=-=- */
-
 .info_geral {
     flex-direction: column;
-    justify-content: space-between;
-
+    gap: 20px;
     padding: 30px 40px;
     flex-basis: 10%;
     width: 348px;
-    height: 348px;
+    height: auto;
+    border-radius: 20%;
+}
+.info_geral div {
+    align-items: center;
+}
+.info_geral p {
+    margin: 0px 20px;
+}
+.info_geral a {
+    margin-left: 20px;
+}
 
+/*=-=-=-=-=-=-= Terceiro Bloco =-=-=-=-=-=- */
+.tech {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    gap: 20px;
 
-
+    width: 348px;
+    height: auto;
+}
+.tech div {
+    border-radius: 30%;
+    justify-content: center;
     
+    font-size: 10px;
+    width: 86px;
+    height: 24px;
+    padding: 7px;
+    flex-wrap: wrap;
 }

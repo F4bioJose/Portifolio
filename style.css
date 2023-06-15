@@ -1,33 +1,72 @@
 /*estilização universal*/
-
-body {
+:root {
+    --body-bg-color: #22212C;
+    --text-color: #837E9F;
+    --bg-cards: #302F3D;
+    --bg-techs: #CB92B1;
+    --profile-boder-color: #00FF00;
+  }
+main {
     display:flex;
-    padding: 40px;                                                                                                                                                                                                                                   
+    padding: 40px;   
+    background-color: var(--body-bg-color);                                                                                                                                                                                                                               
 }
-* { display: flex;
+* {
     box-sizing: border-box;
-    background-color: #22212C;
+    margin: 0px;
+    padding: 0px:
+}
+div { 
+    display: flex;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+}
+section {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    box-sizing: border-box;
+}
+ul {
+    padding: 0px;
+    margin: 0px;
+}
+li {
+    margin: 20px 0px 0px 40px;
 }
 
-div{
-    border: 2px solid aqua;
-}
 
 /*=-=-=-=-=- estilização personalizada - lado esquerdo =-=-=-=--==*/
 
 #left_side { /*border: 1px solid blue;*/
     flex-direction: column;
-    justify-content: left;
-    margin-top: 40px;
-    margin-left: 40px;
-    margin-block: 30px;
+    align-items: start;
+    margin-right: 40px;
+    gap: 30px;
 }
+
+#left_side > div {
+    background-color: var(--bg-cards);
+
+}
+#left_side > section {
+    background-color: var(--bg-cards);
+}
+
+#left_side > div:hover{
+    border:#00FF00 solid 1px;
+}
+
+#left_side > section:hover{
+    border:#00FF00 solid 1px ;
+}
+
+
+
+
 
 /* =-=-=-=-=-= Estilização - lado direito =-=-=-=-=-=*/
 
 #right_side {
     flex-direction: column;
-   /* border: 1px solid blue;*/
     margin-top: 40px;
     margin-left: 40px;
 
@@ -42,7 +81,7 @@ div{
 
     width: 348px;
     height: 348px;
-    border-radius: 10%;
+    border-radius: 8%;
 }
 .profile_img {
     margin-left: 20px;
@@ -52,8 +91,8 @@ div{
 }
 
 .profile_container img {
-    border-radius: 60%;
-    border: 1px solid greenyellow;
+    border-radius: 50%;
+    border: 2px solid var(--profile-boder-color);
     width: 128px;
     height: 128px;
 }
@@ -65,7 +104,7 @@ div{
     flex-basis: 10%;
     width: 348px;
     height: auto;
-    border-radius: 20%;
+    border-radius: 10%;
 }
 .info_geral div {
     align-items: center;
@@ -80,21 +119,39 @@ div{
 /*=-=-=-=-=-=-= Terceiro Bloco =-=-=-=-=-=- */
 .tech {
     flex-direction: row;
-    align-items: center;
+    align-items: end;
     justify-content: center;
+    width: 348px;
     padding: 30px;
     gap: 20px;
-
     width: 348px;
     height: auto;
+    flex-wrap: wrap;
 }
-.tech div {
-    border-radius: 30%;
-    justify-content: center;
+
+.tech h2 ~ div{
     
+    justify-content: center;
     font-size: 10px;
-    width: 86px;
     height: 24px;
     padding: 7px;
-    flex-wrap: wrap;
+    border-radius: 30%;
+}
+.tech h2 {
+    margin: 0px;
+    justify-self: left;
+}
+/* =-=-=-=-=-=- QUarto bloco -=-=-=-=-= */
+.xp {
+    width: 348px;
+    height: auto;
+    flex-direction: column;
+    padding: 30px 20px;
+}
+/* =-=-=-=-=-=- Educação =-=-=-=-=-=-=-= */
+.edu {
+    width: 348px;
+    height: auto;
+    flex-direction: column;
+    padding: 30px 20px;
 }

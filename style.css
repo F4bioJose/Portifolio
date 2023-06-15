@@ -7,23 +7,21 @@
     --profile-boder-color: #00FF00;
   }
 main {
+    margin: 0 auto;
     display:flex;
     padding: 40px;   
     background-color: var(--body-bg-color);                                                                                                                                                                                                                               
 }
 * {
     box-sizing: border-box;
-    margin: 0px;
-    padding: 0px:
+    margin: 0;
+    padding: 0;
+    font-family: ;
 }
 div { 
     display: flex;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 
-}
-section {
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    box-sizing: border-box;
 }
 ul {
     padding: 0px;
@@ -45,23 +43,10 @@ li {
 
 #left_side > div {
     background-color: var(--bg-cards);
-
 }
-#left_side > section {
-    background-color: var(--bg-cards);
+#left_side div:hover{
+    box-shadow: 0px 0px 10px #00FF00
 }
-
-#left_side > div:hover{
-    border:#00FF00 solid 1px;
-}
-
-#left_side > section:hover{
-    border:#00FF00 solid 1px ;
-}
-
-
-
-
 
 /* =-=-=-=-=-= Estilização - lado direito =-=-=-=-=-=*/
 

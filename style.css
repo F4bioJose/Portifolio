@@ -7,6 +7,7 @@
     --profile-boder-color: #00FF00;
   }
 main {
+    max-width: 1440px;
     margin: 0 auto;
     display:flex;
     padding: 40px;   
@@ -16,12 +17,13 @@ main {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: ;
+    height: auto;
+    font-family: 'Merriweather Sans', sans-serif;
+    
 }
 div { 
     display: flex;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-
 }
 ul {
     padding: 0px;
@@ -29,6 +31,12 @@ ul {
 }
 li {
     margin: 20px 0px 0px 40px;
+}
+a {
+    text-decoration: none;
+}
+a,li,img,h3,h1,p,div {
+    color: var(--text-color)
 }
 
 
@@ -43,11 +51,15 @@ li {
 
 #left_side > div {
     background-color: var(--bg-cards);
+    border-radius: 20px;
+    width: 384px;
 }
 #left_side div:hover{
-    box-shadow: 0px 0px 10px #00FF00
+    /*box-shadow: 0px 0px 10px #00FF00*/
 }
-
+ a:hover {
+    color: #00FF00;
+}
 /* =-=-=-=-=-= Estilização - lado direito =-=-=-=-=-=*/
 
 #right_side {
@@ -61,35 +73,41 @@ li {
 /*=-=-=-=-=-=-= Primeiro bloco - perfil =-=-=-=-=-= */
 .profile {
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-
     width: 348px;
     height: 348px;
-    border-radius: 8%;
 }
 .profile_img {
     margin-left: 20px;
     max-width: 100%;
-    max-height: 100%;
-    
+    max-height: 100%; 
 }
-
 .profile_container img {
     border-radius: 50%;
     border: 2px solid var(--profile-boder-color);
     width: 128px;
     height: 128px;
+    margin: 30px 0px;
+}
+h1{
+    font-weight: 700;
+    font-size: 23px;
+}
+
+h1 > p {
+    font-size: 13px;
+    font-weight: 300;
 }
 /* =-=-=-=-=-=- Segundo bloco - informações =-=-=-=- */
 .info_geral {
     flex-direction: column;
     gap: 20px;
     padding: 30px 40px;
-    flex-basis: 10%;
     width: 348px;
-    height: auto;
-    border-radius: 10%;
+    font-size: 13px;
+    font-weight: 400;
+
+
 }
 .info_geral div {
     align-items: center;
@@ -99,44 +117,43 @@ li {
 }
 .info_geral a {
     margin-left: 20px;
+    
 }
 
 /*=-=-=-=-=-=-= Terceiro Bloco =-=-=-=-=-=- */
 .tech {
-    flex-direction: row;
-    align-items: end;
-    justify-content: center;
-    width: 348px;
-    padding: 30px;
-    gap: 20px;
-    width: 348px;
-    height: auto;
+    padding: 20px;
     flex-wrap: wrap;
 }
-
-.tech h2 ~ div{
-    
+.tech > div {
+    flex-direction: row;
     justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin: 10px;
     font-size: 10px;
-    height: 24px;
-    padding: 7px;
-    border-radius: 30%;
+    font-weight: 700;
+    text-transform: uppercase;
+    
 }
-.tech h2 {
-    margin: 0px;
-    justify-self: left;
+.tech > div > div {
+    justify-content: center;
+    align-items: center;
+    background-color:var(--bg-techs);
+    color:black;
+    border-radius: 10px;
+    width: 86px;
+    height: 24px;
+
 }
 /* =-=-=-=-=-=- QUarto bloco -=-=-=-=-= */
 .xp {
-    width: 348px;
-    height: auto;
     flex-direction: column;
     padding: 30px 20px;
 }
 /* =-=-=-=-=-=- Educação =-=-=-=-=-=-=-= */
 .edu {
-    width: 348px;
-    height: auto;
     flex-direction: column;
     padding: 30px 20px;
 }
+

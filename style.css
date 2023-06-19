@@ -6,6 +6,10 @@
     --bg-techs: #CB92B1;
     --profile-boder-color: #00FF00;
   }
+
+body {
+    background-color: var(--body-bg-color);
+}
 main {
     max-width: 1440px;
     margin: 0 auto;
@@ -60,14 +64,7 @@ a,li,img,h3,h1,p,div {
  a:hover {
     color: #00FF00;
 }
-/* =-=-=-=-=-= Estilização - lado direito =-=-=-=-=-=*/
 
-#right_side {
-    flex-direction: column;
-    margin-top: 40px;
-    margin-left: 40px;
-
-}
 /* =-=-=-=-=-= Elementos do lado esquerdo =-=-=-=-=-= */
  
 /*=-=-=-=-=-=-= Primeiro bloco - perfil =-=-=-=-=-= */
@@ -77,11 +74,7 @@ a,li,img,h3,h1,p,div {
     width: 348px;
     height: 348px;
 }
-.profile_img {
-    margin-left: 20px;
-    max-width: 100%;
-    max-height: 100%; 
-}
+
 .profile_container img {
     border-radius: 50%;
     border: 2px solid var(--profile-boder-color);
@@ -155,5 +148,55 @@ h1 > p {
 .edu {
     flex-direction: column;
     padding: 30px 20px;
+}
+
+/* =-=-=-=-=-= Estilização - lado direito =-=-=-=-=-=*/
+#right_side {
+    flex-direction: column;
+    gap: 20px;
+}
+#right_side > div, #right_side  a {
+    background-color: var(--bg-cards);
+    border-radius: 20px;
+}
+#right_side > div > h2 {
+    width: 952px;
+    align-items: center;
+    padding: 30px 40px;
+}
+.projetos > h2 {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+#right_project, #left_project {
+    width: 461px;
+    padding: 30px;
+    flex-direction: column;
+}
+.blue_ball {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: solid gray ;
+    background-color: #E7DE79;
+}
+.profile_conteiner_2  img {
+    border-radius: 50%;
+    width: 128px;
+    height: 128px;
+    margin: 29px 0px 32px 30px;
+}
+
+/*=-=-==-=-=- Estilização =-=-=-=-=-= */
+#left_project:hover,
+#right_project:hover {
+    box-shadow: 0px 0px 10px #00FF00;
+    
+}
+div.proj_content {
+    justify-content: space-between;
+    background-color: #00FF00;
+
 }
 

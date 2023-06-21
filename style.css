@@ -14,8 +14,10 @@ main {
     max-width: 1440px;
     margin: 0 auto;
     display:flex;
-    padding: 40px;   
-    background-color: var(--body-bg-color);                                                                                                                                                                                                                               
+    padding: 40px 0px 40px; 
+    background-color: var(--body-bg-color);
+    align-content: center;
+                                                                                                                                                                                                                              
 }
 * {
     box-sizing: border-box;
@@ -162,10 +164,7 @@ h1 > p {
     flex-direction: column;
     gap: 20px;
 }
-#right_side > div, #right_side  a {
-    background-color: var(--bg-cards);
-    border-radius: 20px;
-}
+
 #right_side > div > h2 {
     width: 952px;
     align-items: center;
@@ -183,11 +182,17 @@ h1 > p {
     width: 461px;
     padding: 30px;
     flex-direction: column;
+    background-color: var(--bg-cards);
+    border-radius: 20px;
+    flex-grow: 1;
+    
 }
-#right_project > a > div, #left_project > a > div {
-
+#right_project {
+    margin-left: 10px;
 }
-
+#left_project {
+    margin-right: 10px;
+}
 
 .blue_ball {
     width: 15px;
@@ -201,7 +206,7 @@ h1 > p {
     background-color: #0084ff;
 }
 
-.profile_conteiner_2  img {
+.profile_2  img {
     border-radius: 50%;
     width: 128px;
     height: 128px;
@@ -214,14 +219,18 @@ h1 > p {
     box-shadow: 1px 1px 5px #0084ff;
     
 }
-#right_side > #proj_content {
-    justify-content: space-between;
-    background-color: var(--body-bg-color);
-}
-.my_project, .recent_post, .profile_conteiner_2 {
+.my_project, .recent_post, .profile_2 {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    background-color: var(--bg-cards);
+    border-radius: 20px;
 }
 
-#proj_content {
-    flex-direction: ;
+
+/* =-=-=-=-= Resposividade =-=-=-=-=-= */
+@media screen (max-width: 800px){
+
+    #proj_content {
+        flex-wrap: wrap;
+    }
 }
+    

@@ -3,7 +3,7 @@
 # Desafio Portifólio 📄
 
 ### Descrição ✏️
-<p> Desafio do <strong>Projeto DEV da TITAN</strong> para aplicar ferramentas mais elaboradas do <strong> CSS e HTML </strong> focados posicionamento de elementos com flex-box e responsividade com media query </p>
+<p> Desafio do <strong>Projeto DEV da <color: "yellow"> TITAN </color></strong> para aplicar ferramentas mais elaboradas do <strong> CSS e HTML </strong> focados posicionamento de elementos com flex-box e responsividade com media query </p>
 
 ### Ferrmentas Usadas 🛠️
 ![HTML](https://img.shields.io/badge/HTML5-E34F26.svg?style=for-the-badge&logo=HTML5&logoColor=white)

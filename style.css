@@ -15,9 +15,9 @@ main {
     margin: 0 auto;
     display:flex;
     padding: 10px;
-    background-color: var(--body-bg-color);
     justify-content: center;
     align-content: center;
+    background-color: ;
 }
 
 * {
@@ -60,13 +60,14 @@ a,li,img,h3,h1,p,div {
 #left_side { /*border: 1px solid blue;*/
     flex-direction: column;
     justify-content: space-evenly;
+    margin:20px;
 }
 
 #left_side > div {
     background-color: var(--bg-cards);
     border-radius: 20px;
     width: 384px;
-    margin: 15px;
+    margin: 15px 0px 15px 0px;
 }
 #left_side div:hover{
     /*box-shadow: 0px 0px 10px #00FF00*/
@@ -169,18 +170,20 @@ h1 > p {
 /* =-=-=-=-=-= Estilização - lado direito =-=-=-=-=-=*/
 #right_side {
     flex-direction: column;
+    margin: 20px;
 }
-#right_side > div, #right_side  h2{
-    margin: 15px;
+#right_side > div{
+    margin: 15px 0px 15px 0px;
 }
 
-#right_side > div > h2 {
-    width: 952px;
+
+.my_project, .recent_post {
     align-items: center;
-    padding: 30px 40px;
+    justify-content: space-between;
+    padding: 20px;
 }
-.my_project {
-    align-items: center;
+#proj_content {
+    gap: 20px;
 }
 .projetos > h2 {
     font-weight: 700;
@@ -194,13 +197,6 @@ h1 > p {
     background-color: var(--bg-cards);
     border-radius: 20px;
     flex-grow: 1;
-}
-#right_project {
-    margin-left: 10px;
-}
-#left_project {
-    margin-right: 10px;
-    order: ;
 }
 #left_project > div ,#right_project > div,
 #left_project div > p,#right_project p:nth-of-type(1)
@@ -230,7 +226,8 @@ h1 > p {
 .profile_2 {
     flex-direction: row;
     align-items: center;
-    padding: 20px 40px;
+    padding: 20px;
+    
 
 }
 .profile_2 div:nth-of-type(2), .profile_2 div:nth-of-type(1) {
@@ -267,19 +264,46 @@ h1 > p {
  
 
 /* =-=-=-=-= Resposividade =-=-=-=-=-= */
-@media (max-width: 1400px){
-
+@media (max-width: 1320px){
     #proj_content {
         flex-wrap: wrap;
-        flex-direction: column;
     }
 
 }
-
-@media screen (max-width:800px){
-    main { 
-       flex-direction: 
-            
+@media (max-width: 1050px){
+    #right_side > div,#right_side  a {
+    flex-wrap: wrap;
     }
-}
     
+    .profile_2 {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+}
+
+@media (max-width:890px) {
+    main {
+        flex-wrap: wrap;
+        flex-direction: column;
+        
+    }
+    #left_side > div {
+        width: 100%;
+    }
+    #right_side > div, #right_side > a {
+        width: 100%;
+    }
+
+    .tech {
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width:400px) {
+    main > div {
+        flex-wrap: wrap;
+        flex-direction: column;   
+    }
+}
